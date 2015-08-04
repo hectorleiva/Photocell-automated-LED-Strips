@@ -15,7 +15,6 @@ int photocellReading;     // the analog reading from the analog resistor divider
 void setup(void) {
   // We'll send debugging information via the Serial monitor
   Serial.begin(9600);
-  
   //  Assign the output for the RGB LED Strips
   pinMode(REDPIN, OUTPUT);
   pinMode(GREENPIN, OUTPUT);
@@ -29,10 +28,10 @@ void loop(void) {
   int r_min, g_min, b_min;
   
   // Maximum Total on all LED's. This is due to limitations of current/volts
-  r_max = 100;
-  g_max = 100;
-  b_max = 100;
-
+  r_max = 130;
+  g_max = 130;
+  b_max = 130;
+  
   r_min = 0;
   g_min = 0;
   b_min = 0;
